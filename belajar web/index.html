@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obat Herbal Alami</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="navbar">
+        <!-- Logo -->
+        <div class="logo">RaNus</div>
+
+        <!-- Menu -->
+        <div class="menu">
+            <a href="">HOME</a>
+            <a href="#kontak">KONTAK</a>
+            <a href="#profil">PROFIL</a>
+        </div>
+
+        <!-- Tombol Login -->
+        <button class="button" onclick="window.open('login.html', '_blank')">LOGIN</button>
+    </div>
+    
+    <header>
+        <div class="container">
+            <h1>Obat Ramuan Nusantara</h1>
+            <p>Solusi Sehat dari Alam</p>
+            <a href="#produk mb-5" class="btn-primary">Lihat Produk</a>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Ramuan Nusantara</h2>
+            <p>Ramuan Nusantara adalah usaha mikro, kecil, dan menengah (UMKM) yang bergerak di bidang produksi dan pemasaran obat herbal berbahan dasar alami khas Indonesia. Mengusung konsep kembali ke alam, Ramuan Nusantara menghadirkan produk-produk herbal yang diramu dari resep tradisional warisan leluhur, dipadukan dengan inovasi modern untuk menjaga kualitas dan 
+                khasiat.</p>
+                <br>
+            <p>Dengan motto "Alam Menyembuhkan, Nusantara Menguatkan", Ramuan Nusantara berkomitmen untuk mendukung kesehatan masyarakat sekaligus memberdayakan petani lokal melalui penggunaan bahan baku dari hasil pertanian berkelanjutan. Selain itu, UMKM ini juga menjaga standar produksi yang higienis dan ramah lingkungan untuk memastikan setiap produk aman dan berkualitas 
+                tinggi.</p>
+        </div>
+    </section>
+
+    <section id="banner">
+        <div class="slider-container">
+            <!-- Gambar Slider -->
+            <div class="slide slide1">
+                <img src="./img/banner1.jpg" alt="Banner 1">
+            </div>
+            <div class="slide slide2">
+                <img src="./img/banner2.jpg" alt="Banner 2">
+            </div>
+            <div class="slide slide3">
+                <img src="./img/banner3.jpg" alt="Banner 3">
+            </div>
+        </div>
+        <!-- Navigasi Slider -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </section>
+
+    <section id="produk mb-5">
+        <div class="container">
+            <h2>Produk Ramuan Nusantara</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./img/obat1.jfif" alt="Obat Herbal 1">
+                    <h3>Mastin</h3>
+                    <p>memelihara kesehatan tubuh, sebagai sumber antioksidan, dan meningkatkan daya tahan tubuh.</p>
+                    <br>
+                    <a onclick="window.open('form.html')" class="btn-primary">Harga IDR 126.000</a>
+                </div>
+                <div class="product-card">
+                    <img src="./img/obat2.jfif" alt="Obat Herbal 2">
+                    <h3>Tumpedu</h3>
+                    <p>Menghancurkan batu empedu yang muncul karena terlalu banyak kolesterol di kantung empedu.</p>
+                    <br>
+                    <a onclick="window.open('form.html')" class="btn-primary">Harga IDR 197.000</a>
+                </div>
+                <div class="product-card">
+                    <img class="obat3" src="./img/obat3.jpg" alt="Obat Herbal 3">
+                    <h3>D-Kelor</h3>
+                    <p>Menjaga kesehatan jantung, menjaga kesehatan otak, dan menjaga kesehatan kulit serta mata</p>
+                    <br>
+                    <a onclick="window.open('form.html')" class="btn-primary">Harga IDR 190.000</a>
+                </div>
+                <div class="product-card">
+                    <img class="obat4" src="./img/obat4.jpg" alt="Obat Herbal 3">
+                    <h3>Sirup Mahkota Dewa</h3>
+                    <p>Membantu mengontrol gula darah dan mendukung metabolisme tubuh.</p>
+                    <br>
+                    <a onclick="window.open('form.html')" class="btn-primary">Harga IDR 120.000</a>  
+                </div>
+                <div class="product-card">
+                    <img src="./img/obat5.jfif" alt="Obat Herbal 3">
+                    <h3>Teh Daun Bidara</h3>
+                    <p>Membantu mengurangi stres, dan meningkatkan kesehatan tubuh secara keseluruhan.</p>
+                    <br>
+                    <a onclick="window.open('form.html')" class="btn-primary">Harga IDR 60.000</a>
+                </div>
+                <div class="product-card">
+                    <img src="./img/obat6" alt="Obat Herbal 3">
+                    <h3>Kapsul Daun Sirsak</h3>
+                    <p>Membantu meningkatkan kekebalan tubuh dan sebagai antioksidan alami.</p>
+                    <br>
+                    <a onclick="window.open('form.html')" class="btn-primary">Harga IDR 100.000</a>
+                </div>
+                <!-- <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <p>Silakan login terlebih dahulu untuk melakukan pembelian.</p>
+                        <a href="form.html" target="_blank" class="btn-primary">Login Sekarang</a>
+                    </div>
+                </div>                 -->
+            </div>
+            <div class="mt-5 max-w-sm mx-auto flex justify-center">
+
+                <button class="btn-secondary mx-auto" onclick="window.open('form.html', '_blank')">Beli Sekarang</button>
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="kontak">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Hubungi kami untuk informasi lebih lanjut mengenai produk herbal alami.</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Nama" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Pesan" required></textarea>
+                <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+        <div class="container">
+
+        </div>
+    </section>
+    
+    
+    <section id="profil" class="">
+        <div class="container">
+            <h2>Profil Pengembang</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/sayafix.jpeg" alt="Obat Herbal 1">
+                    <h3>Ananda Haidar Hilmi</h3>
+                    <p>Mahasiswa Jurusan Teknik Informatika STT Nurul Fikri ssekaligus pemilik Ramuan Nusantara.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Ramuan Nusantara. Semua Hak Dilindungi.</p>
+        <div class="social-media">
+            <a href="https://github.com/Haidar-Hilmi27/pemweb1_HaidarHilmi" target="_blank" class="social-icon">
+                <img src="./img/hub.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/anandah07_/" target="_blank" class="social-icon">
+                <img src="./img/ig.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/ananda-haidar-hilmi-156860334/" target="_blank" class="social-icon">
+                <img src="./img/link.png" alt="linkedin">
+            </a>
+        </div>
+    </footer>
+    
+    <img  class="top" onclick="location.href='#navbar'" src="./img/fixhome.png" alt="home">
+</body>
+</html>

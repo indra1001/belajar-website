@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pembelian</title>
+    <style>
+        #form{
+            padding: 40px 0;
+            background: #f4f4f4;
+            text-align: center;
+            height: 110vh;
+        }
+    .purchase-form-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .purchase-form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    label {
+        font-size: 1rem;
+        color: #555;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #007bff;
+    }
+
+    .btn-submit {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-submit:hover {
+        background-color: #218838;
+    }
+
+    textarea {
+        resize: none;
+    }
+    </style>
+</head>
+<body>
+    <section id="form" class="block">
+        <div class="purchase-form-container">
+            <h2>Formulir Pembelian Produk</h2>
+            <form action="proses_pembelian.php" method="POST">
+                <!-- Nama Produk -->
+                <label for="product-name">Nama Produk:</label>
+                <select id="product-name" name="product_name" required>
+                    <option value="">Pilih Produk</option>
+                    <option value="Mastin">Mastin</option>
+                    <option value="Tumpedu">Tumpedu</option>
+                    <option value="D-Kelor">D-Kelor</option>
+                    <option value="Sirup Mahkota Dewa">Sirup Mahkota Dewa</option>
+                    <option value="Teh Daun Bidara">Teh Daun Bidara</option>
+                    <option value="Kapsul Daun Sirsak">Kapsul Daun Sirsak</option>
+                </select>
+        
+                <!-- Jumlah -->
+                <label for="quantity">Jumlah:</label>
+                <input type="number" id="quantity" name="quantity" min="1" placeholder="Masukkan jumlah" required>
+        
+                <!-- Nama Pembeli -->
+                <label for="buyer-name">Nama Pembeli:</label>
+                <input type="text" id="buyer-name" name="buyer_name" placeholder="Masukkan nama Anda" required>
+        
+                <!-- Kontak -->
+                <label for="contact">No. Telepon / Email:</label>
+                <input type="text" id="contact" name="contact" placeholder="Masukkan nomor telepon atau email" required>
+        
+                <!-- Alamat -->
+                <label for="address">Alamat Pengiriman:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+        
+                <!-- Metode Pembayaran -->
+                <label for="payment-method">Metode Pembayaran:</label>
+                <select id="payment-method" name="payment_method" required>
+                    <option value="">Pilih Metode Pembayaran</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="Kartu Kredit">Kartu Kredit</option>
+                    <option value="COD">COD (Cash on Delivery)</option>
+                </select>
+        
+                <!-- Tombol Submit -->
+                <button type="submit" class="btn-submit">Kirim Pesanan</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
